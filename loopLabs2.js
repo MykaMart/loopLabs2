@@ -32,3 +32,28 @@ for (let i = 0; i < menu.length; i++) {
 };
 
 console.log(gfFreeMenu)
+
+// Bonus Problem still working on it
+
+const league = [{name: "NFL", players: [{name: "Tom Brady", goat: false}, {name: "Walter Payton", goat: true}]}, 
+{name: "NBA", players: [{name: "Michael Jordan", goat: true}, {name: "Lebron James", goat: false}]},
+{name: "MLB", players: [{name: "Babe Ruth", goat: true}, {name: "Alex Rodriguez", goat: false}]}];
+
+const goats = []
+
+for (let i = 0; i < league.length; i++) {
+	
+	for (let a =0; a < league[i].players.length; a++){
+		const pull = league[i].players[a]
+
+		if (pull.goat === true){
+			goats.push(league[i].players[a]);
+		}
+
+		}
+};
+console.log(goats);
+
+
+
+
